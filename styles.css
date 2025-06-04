@@ -106,3 +106,8 @@ body {
 .content:hover .program-img {
   transform: scale(1.03);
 }
+
+.bottom {
+  align-items: center;
+  margin-left: 90px;
+}
