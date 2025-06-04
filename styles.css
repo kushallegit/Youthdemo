@@ -1,0 +1,108 @@
+:root {
+  --white: #ffffff;
+  --light-bg: #f4f6f8;
+  --accent-blue: #0078d4; /* VS Code / Outlook Blue */
+  --text-dark: #1e1e1e;
+  --muted: #777;
+  --box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--light-bg);
+  border-bottom: 2px solid #eee;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-blue);
+}
+
+.header p {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.programs {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.program {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.program.left .content {
+  margin-right: auto;
+}
+
+.program.right .content {
+  margin-left: auto;
+}
+
+.content {
+  background: var(--white);
+  border-radius: 12px;
+  max-width: 550px;
+  box-shadow: 0 4px 15px var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 120, 212, 0.15);
+}
+
+.content h2 {
+  color: var(--accent-blue);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.tag.active {
+  background-color: var(--accent-blue);
+}
+
+.tag.ended {
+  background-color: #aaa;
+}
+
+
+.program-img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.content:hover .program-img {
+  transform: scale(1.03);
+}
